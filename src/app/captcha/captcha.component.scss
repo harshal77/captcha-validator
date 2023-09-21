@@ -1,0 +1,31 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  
+    .actions {
+      input[type=text] {
+        padding: 5px;
+        border: 1px solid #CCC;
+        border-radius: 10px 0 0 10px;
+        outline: none;
+      }
+  
+      input[type=button] {
+        outline: none;
+        padding: 6px;
+        border: none;
+        background: #CCC;
+        border-radius: 0 10px 10px 0;
+      }
+  
+      a {
+        padding: 10px;
+        cursor: pointer;
+        font-size: 25px;
+      }
+    }
+  
+  }

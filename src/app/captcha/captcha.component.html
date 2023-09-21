@@ -1,0 +1,12 @@
+<div class="container">
+    <canvas id="captcahCanvas" width="316" height="80"></canvas>
+    <div class="actions">
+        <input type="text" [(ngModel)]="captchInput" />
+        <input type="button" value="{{buttonName}}" (click)="checkCaptcha()" />
+        <a href="javascript:void(0)" class="cpt-btn reload" (click)="createCaptcha()">&#x21bb;</a>
+    </div>
+    <ng-container *ngIf="showMessage">
+        <p *ngIf="validCaptcha">{{message.valid}}</p>
+        <p *ngIf="!validCaptcha && validCaptcha!== null && captchInput">{{message.invalid}}</p>
+    </ng-container>
+</div>
